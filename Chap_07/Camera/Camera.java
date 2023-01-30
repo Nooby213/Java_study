@@ -4,7 +4,11 @@ public class Camera { // 부모 클래스, 하나의 부모만 상속가능
     public String name;
 
     public Camera() {
-        this.name = "Camera";
+        this("Camera");
+    }
+
+    protected Camera(String name) {
+        this.name = name;
     }
 
     public void takePicture() {

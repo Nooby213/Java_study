@@ -1,10 +1,20 @@
 package Chap_07.Camera;
+// SpeedCam is a Camera  [Is-A]
 
 public class SpeedCam extends Camera { // 자식 클래스
 
 
     public SpeedCam() {
-        this.name = "Speed Cam";
+//        this.name = "Speed Cam";
+    super("Speed Cam");
+    }
+
+    public void takePicture() {
+        super.takePicture();
+        // 사진 촬영
+        //System.out.println(this.name + " : Take a picture");
+        checkSpeed();
+        recognizeLicensePlate();
     }
 
     public void checkSpeed() {

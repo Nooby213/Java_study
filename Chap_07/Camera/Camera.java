@@ -22,6 +22,7 @@ public class Camera { // 부모 클래스, 하나의 부모만 상속가능
     }
 
     public void showMainFeature() {
+
         System.out.println(this.name + " 의 주요 기능 : 사진 촬영, 동영상 녹화");
     }
 }
